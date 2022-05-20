@@ -1,4 +1,6 @@
-	Subject::Subject(){
+#include "Student.h"
+#include "Lecturer.h"	
+Subject::Subject(){
 		strcpy((SubId),"");
 		strcpy((SubName),"");
 	}

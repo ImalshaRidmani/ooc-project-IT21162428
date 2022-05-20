@@ -1,3 +1,7 @@
+#include "Student.h"
+#include "Course.h"
+
+
 Enrolment::Enrolment(){
 		strcpy((EnrolmentDate),"");
 	}

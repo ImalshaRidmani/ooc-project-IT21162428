@@ -22,6 +22,21 @@ int main(){
   delete Paypal1;
   
   
+  Registered_user *RUser1;
+	RUser1 = new Registered_User();
+	RUser1->Unregistered_User("Evan","Rathnsingha","05/23, Nadun Uyana, Galle","1995/05/16","199568471258","Evanrath.95@gmail.com");
+	RUser1->getFirstName();
+	
+	
+	Payment *paymnt1;
+	paymnt1 = new Payment("PAY4545454","Credit card",100000);
+	paymnt1->getPaymentId();
+	paymnt1->setAmount(100000);
+
+	
+	delete RUser1;
+	delete paymnt1;
+  
   
   return 0;
 }

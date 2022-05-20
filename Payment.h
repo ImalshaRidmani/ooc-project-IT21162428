@@ -2,7 +2,7 @@
 class Payment {
 	private:
 		Credit_Card *Cc_card[SIZE];
-		Debit_Car *Dcard[SIZE];
+		Debit_Card *Dcard[SIZE];
 		Paypal *paypal[SIZE];
 		Student *std;
 		

@@ -6,6 +6,10 @@
 #include "Course.h"
 #include "Student.h"
 #include "Enrolment.h"
+#include "Adminstrator"
+#include "Course Coordinator"
+#include "Subject"
+
 using namespace std;
 
 int main(){
@@ -64,31 +68,30 @@ int main(){
    delete cours1;
    delete enrol1;
 	
-  
-  int main(){
 	
-	Administrator *admin1;
-	admin1 = new Administrator("AD58979852","R M Perera");
-	admin1->GenerateUsernameAndPassword();
-	admin1->getAdminID();
-	admin1->getAdminName();
+   Administrator *admin1;
+   admin1 = new Administrator("AD58979852","R M Perera");
+   admin1->GenerateUsernameAndPassword();
+   admin1->getAdminID();
+   admin1->getAdminName();
 	
 	
-	Course_coordinator *CCoordinator1;
-	CCoordinator1 = new Course_coordinator("CC75398460");
-	CCoordinator1-> RemoveCourseCoordinatorDetails();
-	CCoordinator1->setNIC("197584546598");
+   Course_coordinator *CCoordinator1;
+   CCoordinator1 = new Course_coordinator("CC75398460");
+   CCoordinator1-> RemoveCourseCoordinatorDetails();
+   CCoordinator1->setNIC("197584546598");
 	
 	
-	Subject *sub1;
-	sub1 = new Subject("IT105","Object Oriented Concept");
-	sub1->UpdateSubjectDetails();
-	sub1->getSubId();
-	sub1->DeleteSubjectDetails();
+   Subject *sub1;
+   sub1 = new Subject("IT105","Object Oriented Concept");
+   sub1->UpdateSubjectDetails();
+   sub1->getSubId();
+   sub1->DeleteSubjectDetails();
 	
 	
-	delete admin1;
-	delete CCoordinator1;
-	delete sub1;
+  delete admin1;
+  delete CCoordinator1;
+  delete sub1;
+	
   return 0;
 }

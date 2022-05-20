@@ -1,3 +1,4 @@
+#include "RegisteredUser.h"
 Administrator::Administrator(){
 		strcpy((AdminId),"");
 		strcpy((AdminName),"");

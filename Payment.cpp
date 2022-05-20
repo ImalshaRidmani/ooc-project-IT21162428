@@ -1,6 +1,7 @@
 #include"Student.h"
 #include"CreditCard.h"
 #include"DebitCard.h"
+#include"Student"
 
 Payment::Payment(){
 		strcpy((paymentID),"");

@@ -1,3 +1,6 @@
+#include "Subject.h"
+#include "Payment.h"
+
 Student::Student(){
 		strcpy((StId),"");
 	}

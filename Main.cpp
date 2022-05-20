@@ -3,7 +3,9 @@
 #include "PayPal.h"
 #include "RegisteredUser.h"
 #include "Payment.h"
-
+#include "Course.h"
+#include "Student.h"
+#include "Enrolment.h"
 using namespace std;
 
 int main(){
@@ -39,6 +41,30 @@ int main(){
   delete RUser1;
   delete paymnt1;
   
+
+  Student *std1;
+  std1 = new Student("STD1111111");
+  std1->getStId();
+  std1->DisplayStudentDetails();
+	
+	
+	
+  Course *cours1;
+  cours1 = new Course("IT789","Information Technology");
+  cours1->DisplayCourseDetails();
+  cours1->DeleteCourse();
+	
+	
+   Enrolment *enrol1;
+   enrol1 = new Enrolment("STD1112223334","IT002","2021/01/01");
+   enrol1->Enrolment();
+   enrol1->setEnrolmentDate("2022/03/01");
+	
+	
+   delete std1;
+   delete cours1;
+   delete enrol1;
+	
   
   return 0;
 }

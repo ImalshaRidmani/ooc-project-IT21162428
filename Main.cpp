@@ -6,9 +6,6 @@
 #include "Course.h"
 #include "Student.h"
 #include "Enrolment.h"
-#include "Lecturer.h"
-#include "CreditCard.h"
-#include "DebitCard.h"
 using namespace std;
 
 int main(){
@@ -67,33 +64,36 @@ int main(){
    delete std1;
    delete cours1;
    delete enrol1;
+   
+   int main(){
+	
+	Administrator *admin1;
+	admin1 = new Administrator("AD58979852","R M Perera");
+	admin1->GenerateUsernameAndPassword();
+	admin1->getAdminID();
+	admin1->getAdminName();
 	
 	
 	
-   Lecturer *lec1;
-   lec1 = new Lecturer("LC12345678");	
-   lec1-> AddStudentDetails();
-   lec1->setFirstName("Sam");
-   lec1->setLastName("Perera");
-
-
-   Credit_Card *Ccard1;
-   Ccard1 = new Credit_card();	
-   Ccard1->setCardNumber(42364569985278);
-   Ccard1->setCardType("Visa");
-
-
-   Debit_Card *Dcard1;
-   Dcard1 = new Debit_Card();
-   Dcard1->setCardName("A R Wickramasingha");
-   Dcard1->setsecurityCode(879);
-
-
-   delete lec1;
-   delete Ccard1;
-   delete Dcard1;
+	
+	Course_coordinator *CCoordinator1;
+	CCoordinator1 = new Course_coordinator("CC75398460");
+	CCoordinator1-> RemoveCourseCoordinatorDetails();
+	CCoordinator1->setNIC("197584546598");
 	
 	
+	
+	Subject *sub1;
+	sub1 = new Subject("IT105","Object Oriented Concept");
+	sub1->UpdateSubjectDetails();
+	sub1->getSubId();
+	sub1->DeleteSubjectDetails();
+	
+	
+
+	delete admin1;
+	delete CCoordinator1;
+	delete sub1;
   
   return 0;
 }
